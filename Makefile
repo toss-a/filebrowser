@@ -51,10 +51,10 @@ endif
 ifeq ($(ARCH),x86_64)
 	$(INSTALL_BIN) ./files/dict.txt $(1)/usr/bin/dict.txt
 endif
-ifeq ($(ARCH),arm64)
+ifeq ($(ARCH),aarch64)
 	$(INSTALL_BIN) ./files/arm64 $(1)/usr/bin/filebrowser
 endif
-ifeq ($(ARCH),x86_64)
+ifeq ($(ARCH),aarch64)
 	$(INSTALL_BIN) ./files/dict.txt $(1)/usr/bin/dict.txt
 endif
 endef
